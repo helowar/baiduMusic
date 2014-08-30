@@ -1,0 +1,32 @@
+{"errorCode": 22000, "data": {
+    "songList": [
+        {
+            "queryId": "463390",
+            "songId": "463390",
+            "songName": "\u58ee\u5fd7\u5728\u6211\u80f8",
+            "artistId": "1108",
+            "artistName": "\u6210\u9f99",
+            "albumId": 70303,
+            "albumName": "\u8d85\u7ea7\u7cbe\u88c5\u5927\u620f\u4e3b\u9898\u66f2",
+            "songPicSmall": "http:\/\/c.hiphotos.baidu.com\/ting\/pic\/item\/b2de9c82d158ccbf02b7b91b1bd8bc3eb1354183.jpg",
+            "songPicBig": "http:\/\/b.hiphotos.baidu.com\/ting\/pic\/item\/48540923dd54564efa6ee818b1de9c82d1584f83.jpg",
+            "songPicRadio": "http:\/\/a.hiphotos.baidu.com\/ting\/pic\/item\/9825bc315c6034a83fe9b4a0c913495409237683.jpg",
+            "relateStatus": "0",
+            "resourceType": "0",
+            "del_status": 0,
+            "fchar": "C",
+            "allRate": "24,64,128,192,256,320,flac",
+            "distribution": "0000000000,0000000000,0000000000,0000000000,0000000000,0000000000,0000000000,0000000000,0000000000,0000000000",
+            "area": 4,
+            "compress_status": 1,
+            "tingUid": 1108,
+            "piao": 0,
+            "sid": 0,
+            "musician": 0,
+            "resource_type_ext": 0,
+            "source": "web",
+            "yyr_artist_id": "",
+            "korean_bb_song": 0
+        }
+    ]
+}}

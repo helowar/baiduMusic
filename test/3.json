@@ -1,0 +1,70 @@
+{"errorCode": 22000, "data": {
+    "time": 3600,
+    "xcode": "de4331e5dc365378bf9db31aceddcb43",
+    "songList": [
+        {
+            "queryId": "463390",
+            "status": 1,
+            "songId": 463390,
+            "songName": "\u58ee\u5fd7\u5728\u6211\u80f8",
+            "artistId": "146",
+            "artistName": "\u6210\u9f99",
+            "albumId": 70303,
+            "albumName": "\u8d85\u7ea7\u7cbe\u88c5\u5927\u620f\u4e3b\u9898\u66f2",
+            "lrcLink": "\/data2\/lrc\/13760820\/13760820.lrc",
+            "time": 252,
+            "linkCode": 22000,
+            "songLink": "http:\/\/file.qianqian.com\/data2\/music\/43107540\/43107540.mp3?xcode=9fc817688f95637a4a1221d08df0d0e7f6cfde25d50217a9\u0026src=\u0022http%3A%2F%2Fpan.baidu.com%2Fshare%2Flink%3Fshareid%3D912500975%26uk%3D3343658563\u0022",
+            "showLink": "http:\/\/pan.baidu.com\/share\/link?shareid=912500975\u0026uk=3343658563",
+            "format": "mp3",
+            "rate": 128,
+            "size": 4024951,
+            "linkinfo": null,
+            "version": "",
+            "copyType": 1,
+            "enhancement": "2.339996"
+        }
+    ]
+}}
+
+
+// postman post
+{
+"errorCode": 22000,
+"data": {
+"time": 3600,
+"xcode": "0166e5033bab827e0ce07fe1de835e81",
+"songList": [
+{
+"queryId": "463390",
+"status": 1,
+"songId": 463390,
+"songName": "壮志在我胸",
+"artistId": "146",
+"artistName": "成龙",
+"albumId": 70303,
+"albumName": "超级精装大戏主题曲",
+"lrcLink": "/data2/lrc/13760820/13760820.lrc",
+"time": 252,
+"linkCode": 22000,
+"songLink": "http://file.qianqian.com/data2/music/43107540/43107540.mp3?xcode=2124a15705497775db7113eb47ded17af6cfde25d50217a9&src=\"http%3A%2F%2Fpan.baidu.com%2Fshare%2Flink%3Fshareid%3D912500975%26uk%3D3343658563\"",
+"showLink": "http://pan.baidu.com/share/link?shareid=912500975&uk=3343658563",
+"format": "mp3",
+"rate": 128,
+"size": 4024951,
+"linkinfo": null,
+"version": "",
+"copyType": 1,
+"enhancement": "2.339996"
+}
+]
+}
+}
+
+
+
+after: http://file.qianqian.com/data2/music/43107540/43107540.mp3?xcode=63e9a6de8a6ac456b772a31dd9f54238f6cfde25d50217a9&src=\"http%3A%2F%2Fpan.baidu.com%2Fshare%2Flink%3Fshareid%3D912500975%26uk%3D3343658563\"
+       http://file.qianqian.com/data2/music/43107540/43107540.mp3?xcode=63e9a6de8a6ac456b772a31dd9f54238f6cfde25d50217a9&src=\"http%3A%2F%2Fpan.baidu.com%2Fshare%2Flink%3Fshareid%3D912500975%26uk%3D3343658563\"
+
+
+before: http:\/\/file.qianqian.com\/data2\/music\/43107540\/43107540.mp3?xcode=63e9a6de8a6ac456b772a31dd9f54238f6cfde25d50217a9\u0026src=\u0022http%3A%2F%2Fpan.baidu.com%2Fshare%2Flink%3Fshareid%3D912500975%26uk%3D3343658563\u0022
