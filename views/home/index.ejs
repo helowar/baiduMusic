@@ -49,13 +49,14 @@
                     </a>
                     <img class="border-radius-top" ng-src="{{obj.songPicBig||'asset/pj2.jpg'}}" ng-click="down(obj.song)">
                 </div>
-                <h5>专辑:<span ng-bind="obj.albumName"></span></h5>
+                <h5>歌手:<span ng-bind="obj.artistName"></span></h5>
             </div>
             <div class="box border-radius-bottom">
                 <p>
                     <a target="_blank" ng-href="/music/getPipe?url={{obj.song}}"><span class="title_torrent pull-left pull-left">下载:<span ng-bind="obj.songName"></span></span></a>
                     <span class="number-view pull-right"><i ng-click="showLrc(obj.lrcLink, obj.songName)" class="icon-white icon-eye-open"></i><a ng-click="showLrc(obj.lrcLink, obj.songName)">歌词</a></span></span>
                 </p>
+
             </div>
         </li>
     </ul>

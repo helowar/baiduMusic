@@ -76,7 +76,8 @@ exports.getSug = function (param, cb) {
                                     songid: s.songid,
                                     song: decodeDownUrl(body.data.songList[0].songLink),
                                     lrcLink: 'http://play.baidu.com' + decodeDownUrl(body.data.songList[0].lrcLink),
-                                    showLink: decodeDownUrl(body.data.songList[0].showLink)
+                                    showLink: decodeDownUrl(body.data.songList[0].showLink),
+                                    artistName: (body.data.songList[0].artistName)
                                 };
 //                                console.log("obj", obj);
                                 cb3(null,obj);
