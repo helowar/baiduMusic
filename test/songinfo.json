@@ -1,0 +1,33 @@
+{"errorCode": 22000,
+    "data": {
+    "songList": [
+        {
+            "queryId": "17791322",
+            "songId": "17791322",
+            "songName": "Summer\u3000",
+            "artistId": "290071",
+            "artistName": "\u4e45\u77f3\u8ba9",
+            "albumId": 17781800,
+            "albumName": "Melodyphony~Best of Joe Hisaishi~",
+            "songPicSmall": "http:\/\/a.hiphotos.baidu.com\/ting\/pic\/item\/34fae6cd7b899e51bfb93c0140a7d933c8950deb.jpg",
+            "songPicBig": "http:\/\/b.hiphotos.baidu.com\/ting\/pic\/item\/7af40ad162d9f2d3a60e22faabec8a136327cc8c.jpg",
+            "songPicRadio": "http:\/\/c.hiphotos.baidu.com\/ting\/pic\/item\/b7fd5266d01609240212a40ed60735fae6cd34eb.jpg",
+            "relateStatus": "1",
+            "resourceType": "2",
+            "del_status": 1,
+            "fchar": "J",
+            "allRate": "24,64,128,192,256,320,flac",
+            "distribution": "0100100000,0101100000,0101100000,0111101111,0101100000,1101100000,1101100000,1111111111,0101100000,1111111111",
+            "area": 4,
+            "compress_status": 1,
+            "tingUid": 290071,
+            "piao": 0,
+            "sid": 0,
+            "musician": 0,
+            "resource_type_ext": 0,
+            "source": "web",
+            "yyr_artist_id": "",
+            "korean_bb_song": 0
+        }
+    ]
+}}
