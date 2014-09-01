@@ -1,0 +1,34 @@
+Remote Address:124.238.238.117:80
+Request URL:http://file.qianqian.com/data2/music/122880738/122880738.mp3?xcode=4cc5d783e4be9379a300ad69a9193119e9dbf079b14ac48c&src=\%22http%3A%2F%2Fpan.baidu.com%2Fshare%2Flink%3Fshareid%3D839367518%26uk%3D3393989443\%22
+Request Method:GET
+Status Code:403 Forbidden
+Request Headersview source
+Accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding:gzip,deflate,sdch
+Accept-Language:en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4,zh-TW;q=0.2
+Cache-Control:no-cache
+Connection:keep-alive
+Host:file.qianqian.com
+Pragma:no-cache
+Referer:http://localhost:1337/
+User-Agent:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.94 Safari/537.36
+Query String Parametersview sourceview URL encoded
+xcode:4cc5d783e4be9379a300ad69a9193119e9dbf079b14ac48c
+src:\"http://pan.baidu.com/share/link?shareid=839367518&uk=3393989443\"
+
+Remote Address:124.238.238.117:80
+Request URL:http://file.qianqian.com/data2/music/122880738/122880738.mp3?xcode=4cc5d783e4be9379a300ad69a9193119e9dbf079b14ac48c&src=\%22http%3A%2F%2Fpan.baidu.com%2Fshare%2Flink%3Fshareid%3D839367518%26uk%3D3393989443\%22
+Request Method:GET
+Status Code:200 OK
+Request Headersview source
+Accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding:gzip,deflate,sdch
+Accept-Language:en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4,zh-TW;q=0.2
+Cache-Control:no-cache
+Connection:keep-alive
+Host:file.qianqian.com
+Pragma:no-cache
+User-Agent:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.94 Safari/537.36
+Query String Parametersview sourceview URL encoded
+xcode:4cc5d783e4be9379a300ad69a9193119e9dbf079b14ac48c
+src:\"http://pan.baidu.com/share/link?shareid=839367518&uk=3393989443\"

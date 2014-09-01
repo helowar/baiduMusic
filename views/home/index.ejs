@@ -44,143 +44,20 @@
         <li class="span3" ng-repeat="obj in objs" style="cursor: pointer">
             <div class="thumbnail border-radius-top">
                 <div class="bg-thumbnail-img">
-                    <a class="overlay" href="http://wbpreview.com/previews/WB082S4MT/detail.html">
+                    <a class="overlay" href="">
                         <img src="asset/play.png">
                     </a>
-                    <img class="border-radius-top" src="asset/pj1.jpg" ng-click="down(obj.songid)">
+                    <img class="border-radius-top" ng-src="{{obj.songPicBig||'asset/pj2.jpg'}}" ng-click="down(obj.song)">
                 </div>
-                <h5><a href="http://wbpreview.com/previews/WB082S4MT/detail.html"><span ng-bind="obj.artistname"></span> </a></h5>
+                <h5>专辑:<span ng-bind="obj.albumName"></span></h5>
             </div>
             <div class="box border-radius-bottom">
                 <p>
-                    <span class="title_torrent pull-left pull-left"><span ng-bind="obj.songname"></span></span>
-                    <span class="number-view pull-right"><i class="icon-white icon-eye-open"></i><span ng-bind="obj.songid"></span></span>
+                    <a target="_blank" ng-href="/music/getPipe?url={{obj.song}}"><span class="title_torrent pull-left pull-left">下载:<span ng-bind="obj.songName"></span></span></a>
+                    <span class="number-view pull-right"><i ng-click="showLrc(obj.lrcLink, obj.songName)" class="icon-white icon-eye-open"></i><a ng-click="showLrc(obj.lrcLink, obj.songName)">歌词</a></span></span>
                 </p>
             </div>
         </li>
-<!--        <li class="span3">
-            <div class="thumbnail border-radius-top">
-                <div class="bg-thumbnail-img">
-                    <a class="overlay" href="http://wbpreview.com/previews/WB082S4MT/detail.html">
-                        <img src="asset/play.png">
-                    </a>
-                    <img class="border-radius-top" src="asset/pj2.jpg">
-                </div>
-                <h5><a href="http://wbpreview.com/previews/WB082S4MT/detail.html">Lorem ipsum dolor sit </a></h5>
-            </div>
-            <div class="box border-radius-bottom">
-                <p>
-                    <span class="title_torrent pull-left">Movie</span>
-                    <span class="number-view pull-right"><i class="icon-white icon-eye-open"></i>1,444,898</span>
-                </p>
-            </div>
-        </li>
-        <li class="span3">
-            <div class="thumbnail border-radius-top">
-                <div class="bg-thumbnail-img">
-                    <a class="overlay" href="http://wbpreview.com/previews/WB082S4MT/detail.html" style="display: none;">
-                        <img src="asset/play.png">
-                    </a>
-                    <img class="border-radius-top" src="asset/pj3.jpg" style="opacity: 1;">
-                </div>
-                <h5><a href="http://wbpreview.com/previews/WB082S4MT/detail.html">Lorem ipsum dolor sit </a></h5>
-            </div>
-            <div class="box border-radius-bottom">
-                <p>
-                    <span class="title_torrent pull-left">Movie</span>
-                    <span class="number-view pull-right"><i class="icon-white icon-eye-open"></i>1,444,898</span>
-                </p>
-            </div>
-        </li>
-        <li class="span3">
-            <div class="thumbnail border-radius-top">
-                <div class="bg-thumbnail-img">
-                    <a class="overlay" href="http://wbpreview.com/previews/WB082S4MT/detail.html">
-                        <img src="asset/play.png">
-                    </a>
-                    <img class="border-radius-top" src="asset/pj4.jpg">
-                </div>
-                <h5><a href="http://wbpreview.com/previews/WB082S4MT/detail.html">Lorem ipsum dolor sit </a></h5>
-            </div>
-            <div class="box border-radius-bottom">
-                <p>
-                    <span class="title_torrent pull-left">Movie</span>
-                    <span class="number-view pull-right"><i class="icon-white icon-eye-open"></i>1,444,898</span>
-                </p>
-            </div>
-        </li>
-
-        <li class="span3">
-            <div class="thumbnail border-radius-top">
-                <div class="bg-thumbnail-img">
-                    <a class="overlay" href="http://wbpreview.com/previews/WB082S4MT/detail.html">
-                        <img src="asset/play.png">
-                    </a>
-                    <img class="border-radius-top" src="asset/pj5.jpg">
-                </div>
-                <h5><a href="http://wbpreview.com/previews/WB082S4MT/detail.html">Lorem ipsum dolor sit </a></h5>
-            </div>
-            <div class="box border-radius-bottom">
-                <p>
-                    <span class="title_torrent pull-left">Movie</span>
-                    <span class="number-view pull-right"><i class="icon-white icon-eye-open"></i>1,444,898</span>
-                </p>
-            </div>
-        </li>
-
-        <li class="span3">
-            <div class="thumbnail border-radius-top">
-                <div class="bg-thumbnail-img">
-                    <a class="overlay" href="http://wbpreview.com/previews/WB082S4MT/detail.html">
-                        <img src="asset/play.png">
-                    </a>
-                    <img class="border-radius-top" src="asset/pj6.jpg">
-                </div>
-                <h5><a href="http://wbpreview.com/previews/WB082S4MT/detail.html">Lorem ipsum dolor sit </a></h5>
-            </div>
-            <div class="box border-radius-bottom">
-                <p>
-                    <span class="title_torrent pull-left">Movie</span>
-                    <span class="number-view pull-right"><i class="icon-white icon-eye-open"></i>1,444,898</span>
-                </p>
-            </div>
-        </li>
-
-        <li class="span3">
-            <div class="thumbnail border-radius-top">
-                <div class="bg-thumbnail-img">
-                    <a class="overlay" href="http://wbpreview.com/previews/WB082S4MT/detail.html" style="display: none;">
-                        <img src="asset/play.png">
-                    </a>
-                    <img class="border-radius-top" src="asset/pj7.jpg" style="opacity: 1;">
-                </div>
-                <h5><a href="http://wbpreview.com/previews/WB082S4MT/detail.html">Lorem ipsum dolor sit </a></h5>
-            </div>
-            <div class="box border-radius-bottom">
-                <p>
-                    <span class="title_torrent pull-left">Movie</span>
-                    <span class="number-view pull-right"><i class="icon-white icon-eye-open"></i>1,444,898</span>
-                </p>
-            </div>
-        </li>
-
-        <li class="span3">
-            <div class="thumbnail border-radius-top">
-                <div class="bg-thumbnail-img">
-                    <a class="overlay" href="http://wbpreview.com/previews/WB082S4MT/detail.html">
-                        <img src="asset/play.png">
-                    </a>
-                    <img class="border-radius-top" src="asset/pj8.jpg">
-                </div>
-                <h5><a href="http://wbpreview.com/previews/WB082S4MT/detail.html">Lorem ipsum dolor sit </a></h5>
-            </div>
-            <div class="box border-radius-bottom">
-                <p>
-                    <span class="title_torrent pull-left">Movie</span>
-                    <span class="number-view pull-right"><i class="icon-white icon-eye-open"></i>1,444,898</span>
-                </p>
-            </div>
-        </li>-->
     </ul>
 </div><!-- end  -->
 
@@ -188,3 +65,18 @@
 
 </div><!-- end container -->
 </div><!-- end main -->
+
+
+<script type="text/ng-template" id="myModalContent.html">
+    <div class="modal-header">
+        <h3 style="text-align: center; color: #428bca;"><span ng-bind="user.name"></span></h3>
+    </div>
+    <div class="modal-body">
+        <div class="modal-body">
+            <textarea style="height: 400px; width: 560px;background-color:#F4F4F4" ng-model="user.lrc"></textarea>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-warning" ng-click="cancel()">关闭</button>
+    </div>
+</script>

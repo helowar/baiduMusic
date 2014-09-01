@@ -1,7 +1,7 @@
 /**
  * Created by tsq on 14-8-30.
  */
-
+var request = require('request');
 
 module.exports = {
     getSug: function (req, res) {
@@ -33,8 +33,24 @@ module.exports = {
             if (!result) {
                 return res.send(500, '获取歌词失败!');
             }
-            return res.send(result);
+            return res.send({r:result});
         })
+    },
+    getPipe: function (req, res) {
+        var url = req.param('url');
+        if (!url) {
+            return res.send('missing some param')
+        }
+        console.log("options", url);
+        var options = {
+            url: url,
+            headers:{
+                'Referer': 'http://www.baidu.com'
+            }
+        };
+        var x = request(options);
+        req.pipe(x);
+        x.pipe(res);
     }
 
 
