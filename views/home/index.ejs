@@ -3,8 +3,8 @@
 <div class="navbar navbar-fixed-top">
     <div class="navbar-inner">
         <div class="container">
-            <a class="brand" href="http://wbpreview.com/previews/WB082S4MT/index.html#">
-                <span>Choose</span><span class="cl-blue">Logo</span>
+            <a class="brand" href="https://github.com/tsq/baiduMusic" target="_blank">
+                <span>NodeJS-</span><span class="cl-blue">百度音乐下载器</span>
             </a>
         </div>
     </div>
@@ -47,7 +47,8 @@
                     <a class="overlay" href="">
                         <img src="asset/play.png">
                     </a>
-                    <img class="border-radius-top" ng-src="{{obj.songPicBig||'asset/pj2.jpg'}}" ng-click="down(obj.song)">
+                    <img class="border-radius-top" ng-if="obj.songPicBig" ng-src="{{obj.songPicBig}}" ng-click="down(obj.song)">
+                    <img class="border-radius-top"  ng-if="!obj.songPicBig" ng-src="asset/pj{{random}}.jpg" ng-click="down(obj.song)">
                 </div>
                 <h5>歌手:<span ng-bind="obj.artistName"></span></h5>
             </div>

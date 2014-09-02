@@ -23,6 +23,13 @@ music.controller('MainCtrl', ['$scope', 'Music', '$http', '$modal', function ($s
             return;
         }
         Music.getSug({name: name, flag: true}, function (r) {
+            $scope.random = Math.floor(Math.random() * 9) + 1;
+            r = r.map(function(item){
+                if (item.songName.length>8) {
+                    item.songName = item.songName.substring(0, 8) + '...';
+                }
+                return item;
+            })
             $scope.objs = r;
         })
     };
@@ -72,7 +79,8 @@ music.controller('MainCtrl', ['$scope', 'Music', '$http', '$modal', function ($s
             });
         })
     };
-    $scope.search.name = '成龙';
+    var names = ['王菲', '陈奕迅', '邓丽君', '久石让', '雅尼'];
+    $scope.search.name = names[Math.floor(Math.random()*names.length)];
     $scope.submit();
 }]);
 
