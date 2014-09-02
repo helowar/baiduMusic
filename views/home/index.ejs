@@ -1,5 +1,7 @@
+<style>
+    div p{word-break:break-all;}
 
-
+</style>
 <div class="navbar navbar-fixed-top">
     <div class="navbar-inner">
         <div class="container">
@@ -13,7 +15,7 @@
 <div class="main">
 <div class="container">
 <div class="row">
-    <div class="box-wrapper span12">
+    <div class="box-wrapper span12"  style="margin-bottom: 0px !important;">
         <div class="widget">
             <div class="wrapper-search">
                 <form class="form-inline form-search border-rd4" ng-submit="submit()">
@@ -28,12 +30,46 @@
 </div>
 <div class="row">
 <div class="box-wrapper  span12">
+    <div class="widget" id="back" style="display: none">
+        <div class="widget-content">
+            <h3 class="title"><a ng-click="showBack()" href="#">歌曲列表 下载备用地址 </a></h3>
+            <div class="box-message">
+                <ul class="box-message-content">
+                    <li ng-repeat="obj in objs">
+                        <a class="avatar-comment span1" href="#">
+                            <img class="border-radius-top" ng-if="obj.songPicBig" ng-src="{{obj.songPicBig}}" ng-click="down(obj.song)">
+                            <img class="border-radius-top"  ng-if="!obj.songPicBig" ng-src="asset/pj{{random}}.jpg" ng-click="down(obj.song)">
+                        </a>
+                        <div class="message-wrapper span11">
+                            <div class="text-message">
+                                <a href="#">
+                                    歌曲名称:<span ng-bind="obj.songName"></span>
+                                </a> <br/>
+                                <p><a>直接下载地址:</a><span  ng-bind="obj.song"></span></p>
+								<p><a>百度网盘下载地址:</a><span  ng-bind="obj.showLink"></span></p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="widget">
+        <div class="widget-content">
+            <h3 class="title"><a href="#">3种下载方式</a></h3>
+                1.点击歌曲名,对,就是歌曲名左边有'下载'字的那个链接(ps:这种下载方式的缺点是:歌曲名不能正确显示) 。<br/>
+                2.点击图片,没错,当点开后你一定会说,出bug啦-'403 Forbidden',别急，下载链接已经出现在地址栏上了，需要手动按一下回车键就可以下载了。<br/>
+                3.点击页面上的'下载备用地址'即可看到歌曲的下载链接以及百度网盘的链接(ps:有的歌曲没有百度网盘的链接)。<br/>
+        </div>
+    </div>
 
     <div class="row">
         <div class="title span12">
             <h3 class="pull-left">歌曲列表</h3>
             <div class="sort pull-right dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="http://wbpreview.com/previews/WB082S4MT/index.html#">
+                <a class="dropdown-toggle" data-toggle="dropdown" ng-click="showBack()" href="">
                     下载备用地址
                     <b class="caret"></b>
                 </a>

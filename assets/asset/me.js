@@ -79,7 +79,12 @@ music.controller('MainCtrl', ['$scope', 'Music', '$http', '$modal', function ($s
             });
         })
     };
-    var names = ['王菲', '陈奕迅', '邓丽君', '久石让', '雅尼'];
+    $scope.showBack = function(){
+        $('#back').toggle(1500,function(){
+
+        });
+    };
+    var names = ['王菲', '陈奕迅', '邓丽君', '周华健', '小虎队'];
     $scope.search.name = names[Math.floor(Math.random()*names.length)];
     $scope.submit();
 }]);
