@@ -41,7 +41,7 @@ module.exports = {
         if (!url) {
             return res.send('missing some param')
         }
-        console.log("options", url);
+//        console.log("options", url);
         var options = {
             url: url,
             headers:{

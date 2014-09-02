@@ -47,7 +47,7 @@ music.controller('MainCtrl', ['$scope', 'Music', '$http', '$modal', function ($s
         });
     };
     function downHandler(target) {
-        console.log("target", target);
+//        console.log("target", target);
         var a = $("<a href='" + target + "'>361so</a>").get(0);
         var e = document.createEvent('MouseEvents');
         e.initEvent('click', true, true);
@@ -58,7 +58,7 @@ music.controller('MainCtrl', ['$scope', 'Music', '$http', '$modal', function ($s
         window.location = url;
     };
     $scope.showLrc = function (lrcUrl, name) {
-        console.log("lrcUrl", lrcUrl);
+//        console.log("lrcUrl", lrcUrl);
         Music.getLrc({url: lrcUrl}, function(r){
             var user = {
                 name:name,

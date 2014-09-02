@@ -28,7 +28,7 @@ exports.getSug = function (param, cb) {
         return cb(null)
     }
     var url = 'http://sug.music.baidu.com/info/suggestion?format=json&word=' + name;
-    console.log("url", url);
+//    console.log("url", url);
     request(url, function (error, re, body) {
         if (!error && re.statusCode == 200) {
 //        console.log("body", body);
@@ -67,7 +67,7 @@ exports.getSug = function (param, cb) {
 //                    console.log("result", result);
                     async.map(song, function(s, cb3){
                         var url = 'http://play.baidu.com/data/music/songlink?songIds=' + s.songid;
-                        console.log("url", url);
+//                        console.log("url", url);
                         request(url, function (error, re, body) {
                             if (!error && re.statusCode == 200) {
                                 body = JSON.parse(body);
@@ -93,7 +93,7 @@ exports.getSug = function (param, cb) {
                             for (var x = 0; x < result3.length; x++) {
                                 if (result3[x].songid == songid) {
                                     _.extend(result[v], result3[x]);
-                                    console.log("result", result);
+//                                    console.log("result", result);
                                     break;
                                 }
                             }
@@ -118,12 +118,12 @@ exports.getInfo = function (param, cb) {
         return cb(null)
     }
     var url = 'http://play.baidu.com/data/music/songinfo?songIds=' + id;
-    console.log("url", url);
+//    console.log("url", url);
     request(url, function (error, re, body) {
         if (!error && re.statusCode == 200) {
             body = JSON.parse(body);
             var song = body.data.songList[0];
-            console.log("song.area", song.area);
+//            console.log("song.area", song.area);
             var obj = {
                 albumName: song.albumName,
                 songPicSmall: decodeUnicode(song.songPicSmall),
@@ -143,13 +143,13 @@ exports.getDownUrl = function (param, cb) {
         return cb(null)
     }
     var url = 'http://play.baidu.com/data/music/songlink?songIds=' + id;
-    console.log("url", url);
+//    console.log("url", url);
     request(url, function (error, re, body) {
         if (!error && re.statusCode == 200) {
             body = JSON.parse(body);
-            console.log("body", body);
+//            console.log("body", body);
             var song = body.data.songList[0];
-            console.log("song", song);
+//            console.log("song", song);
             /*            var obj = {
              albumName: song.albumName,
              songPicSmall: decodeUnicode(song.songPicSmall),
@@ -168,7 +168,7 @@ exports.getLrc = function (param, cb) {
     if (!url) {
         return cb(null)
     }
-    console.log("url", url);
+//    console.log("url", url);
     request(url, function (error, re, body) {
         if (!error && re.statusCode == 200) {
 //            console.log("body", body.replace(/^\[$\]/g), '');
